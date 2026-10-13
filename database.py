@@ -1,11 +1,21 @@
 
+from contextlib import contextmanager
 import sqlite3
 
 DB_NAME = "campusconnect.db"
 
 
+@contextmanager
 def create_connection():
-    return sqlite3.connect(DB_NAME)
+    connection = sqlite3.connect(DB_NAME)
+    try:
+        yield connection
+        connection.commit()
+    except BaseException:
+        connection.rollback()
+        raise
+    finally:
+        connection.close()
 
 
 def create_table():
