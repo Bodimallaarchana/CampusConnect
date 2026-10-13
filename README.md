@@ -2,6 +2,14 @@
 
 A Student Task Management Application built using Python, Streamlit, and SQLite.
 
+## 🚀 Live Demo
+
+**Try CampusConnect online:** [Open CampusConnect](https://campusconnect-gv4ezkrwtt2yfft6hnpgjh.streamlit.app/)
+
+## 1. Project Overview
+
+CampusConnect is a student task management application designed to help students organize assignments, manage study sessions, track deadlines, and monitor their academic progress.
+
 ## 1. Project Overview
 
 CampusConnect is a student task management application designed to help students organize assignments, manage study sessions, track deadlines, and monitor their academic progress.
