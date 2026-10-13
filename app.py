@@ -245,7 +245,7 @@ if filtered_tasks:
                         value=subject,
                         key=f"subject_{task_id}"
                     )
-                    task_types = ["Assignment", "Study Session"]
+                    task_types = ["Assignment", "Study Session", "Project"]
                     new_type = st.selectbox(
                         "Task Type",
                         task_types,
